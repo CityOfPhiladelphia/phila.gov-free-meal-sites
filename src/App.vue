@@ -21,7 +21,7 @@ export default {
   margin: 0 auto;
 } */
 
-thead tr td {
+thead tr th {
     width: 50%;
   }
 </style>
