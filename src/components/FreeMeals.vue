@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h2>FREE MEAL SITES</h2>
+    <h2>Free meal sites</h2>
     <div class="search">
     <input
         id="search-bar"
         v-model="search"
         class="search-field"
         type="text"
-        placeholder="Search by title or keyword"
+        placeholder="Filter by site name or address"
       ><input
         ref="archive-search-bar"
         type="submit"

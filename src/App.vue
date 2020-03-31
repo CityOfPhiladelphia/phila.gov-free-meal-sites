@@ -7,7 +7,6 @@
 <script>
 import FreeMeals from './components/FreeMeals.vue'
 
-
 export default {
   name: 'App',
   components: {
@@ -17,6 +16,11 @@ export default {
 </script>
 
 <style>
+/* #vue-app {
+  width: 70rem;
+  margin: 0 auto;
+} */
+
 thead tr td {
     width: 50%;
   }
