@@ -43,7 +43,7 @@ import axios from "axios";
 import VueFuse from "vue-fuse";
 import Vue from "vue";
 
-const endpoint = "http://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Distribution_Sites_(Public)/FeatureServer/0/query?where=1%3D1&&outFields=*&f=pjson";
+const endpoint = "https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Distribution_Sites_(Public)/FeatureServer/0/query?where=1%3D1&&outFields=*&f=pjson";
 
 Vue.use(VueFuse);
 
