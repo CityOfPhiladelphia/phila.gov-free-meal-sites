@@ -30,8 +30,8 @@
       </thead>
       <tbody>
         <tr v-for="site in filteredSites" :key="site.ObjectID">
-          <td>{{site.Agency_Name }}</td>
-          <td>{{ site.Address }} ({{ site.Zip_Code}})</td>
+          <td>{{site.Location }}</td>
+          <td>{{ site.Address }} ({{ site.Zip}})</td>
         </tr>
       </tbody>
     </table>
@@ -43,8 +43,8 @@ import axios from "axios";
 import VueFuse from "vue-fuse";
 import Vue from "vue";
 
-const endpoint =
-  "https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/FILE_Community_Food_Hubs/FeatureServer/0/query?where=1%3D1&&outFields=*&f=pjson";
+const endpoint = "http://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Distribution_Sites_(Public)/FeatureServer/0/query?where=1%3D1&&outFields=*&f=pjson";
+
 Vue.use(VueFuse);
 
 export default {
@@ -62,7 +62,7 @@ export default {
         shouldSort: true,
         threshold: 0.1,
         tokenize: true,
-        keys: ["Agency_Name", "Address", "Zip_Code"]
+        keys: ["Location", "Address", "Zip"]
       }
     };
   },
@@ -118,8 +118,8 @@ export default {
         if (this.currentSortDir === "desc") {
           modifier = 1;
         }
-        var textA = a.Agency_Name.toUpperCase();
-        var textB = b.Agency_Name.toUpperCase();
+        var textA = a.Location.toUpperCase();
+        var textB = b.Location.toUpperCase();
         return textA < textB ? -1 * modifier : textA > textB ? 1 * modifier : 0;
       });
     },
