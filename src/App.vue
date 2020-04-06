@@ -1,5 +1,5 @@
 <template>
-  <div id="vue-app">
+  <div id="vue-app-1">
     <FreeMeals />
   </div>
 </template>
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style>
-/* #vue-app {
+/* #vue-app-1 {
   width: 70rem;
   margin: 0 auto;
 } */
