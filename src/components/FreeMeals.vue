@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Free meal sites</h2>
+    <!-- <h2>Free meal sites</h2> -->
     <div class="search">
       <input
         id="search-bar"
